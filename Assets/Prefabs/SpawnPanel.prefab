@@ -2005,6 +2005,7 @@ GameObject:
   - component: {fileID: 8128175256972633807}
   - component: {fileID: 3337256309912711202}
   - component: {fileID: 3760785352210082125}
+  - component: {fileID: 4800851715610508156}
   m_Layer: 0
   m_Name: SpawnPanel
   m_TagString: Untagged
@@ -2099,6 +2100,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4800851715610508156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7004405210444861349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fb097580ba97b41afaca2827d1b037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7212240240236169841
 GameObject:
   m_ObjectHideFlags: 0
