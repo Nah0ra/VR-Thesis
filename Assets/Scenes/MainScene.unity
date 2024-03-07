@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44402218, g: 0.493164, b: 0.57223415, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465769, g: 0.4964124, b: 0.5748184, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -317,7 +317,7 @@ Transform:
   m_GameObject: {fileID: 1273649235}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.079325676, y: 0.18219852, z: -1.3490858}
+  m_LocalPosition: {x: -0.079325676, y: 0.18219852, z: 54.651398}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -355,6 +355,7 @@ MonoBehaviour:
   XNum: {fileID: 9048676927306709018}
   YNum: {fileID: 2909613812292031425}
   ZNum: {fileID: 5640445690217538175}
+  WallPrefab: {fileID: 161073848187743248, guid: d2a27001d4f31784f81dce5a8a0a19a1, type: 3}
 --- !u!4 &1477243995
 Transform:
   m_ObjectHideFlags: 0
@@ -364,7 +365,7 @@ Transform:
   m_GameObject: {fileID: 1477243993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6506057, y: 0.7554108, z: -6.1604843}
+  m_LocalPosition: {x: -2.6506057, y: 0.7554108, z: 49.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -457,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 56.000484
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3377,7 +3378,7 @@ Transform:
   m_GameObject: {fileID: 5146027497347108995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.774, y: 1.244, z: -6.314}
+  m_LocalPosition: {x: -3.774, y: 1.244, z: 49.686485}
   m_LocalScale: {x: 2.6034, y: 2.120522, z: 0.070967145}
   m_ConstrainProportionsScale: 0
   m_Children:
