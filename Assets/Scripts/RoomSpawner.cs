@@ -14,6 +14,11 @@ public class RoomSpawner : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI ZNum;
 
+    [SerializeField]
+    private GameObject RoomPrefab;
+
+    private GameObject SpawnedRoom;
+
     private void Start() 
     {
         GameObject.Find("DownX").GetComponent<Button>().onClick.AddListener(delegate{SubNumber("X");});
@@ -90,9 +95,8 @@ public class RoomSpawner : MonoBehaviour
         int DimY = int.Parse(YNum.text);
         int DimZ = int.Parse(ZNum.text);
 
-        Debug.Log("The X Dimension is : " + DimX);
-        Debug.Log("The Y Dimension is : " + DimY);
-        Debug.Log("The Z Dimension is : " + DimZ);
+        SpawnedRoom = Instantiate(RoomPrefab, new Vector3(5,5,-400), Quaternion.identity);
+        SpawnedRoom.transform.localScale = new Vector3(DimX, DimY, DimZ);
     }
 
     private void Reset()
@@ -100,5 +104,6 @@ public class RoomSpawner : MonoBehaviour
         XNum.text = "0";
         YNum.text = "0";
         ZNum.text = "0";
+        Destroy(SpawnedRoom);
     }
 }

@@ -355,6 +355,7 @@ MonoBehaviour:
   XNum: {fileID: 9048676927306709018}
   YNum: {fileID: 2909613812292031425}
   ZNum: {fileID: 5640445690217538175}
+  RoomPrefab: {fileID: 9149628625227081596, guid: 7ad334c83e0d57542aedbe8e51f6caef, type: 3}
 --- !u!4 &1477243995
 Transform:
   m_ObjectHideFlags: 0
@@ -489,6 +490,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7313654230448209575, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313654230448209575, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7696548424635294051, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
