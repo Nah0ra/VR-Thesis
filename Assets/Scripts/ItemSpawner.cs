@@ -40,9 +40,15 @@ public class ItemSpawner : MonoBehaviour
         switch (Item)
         {
             case "Sofa":
-                GameObject Spawned = Instantiate(SpawnAbles[0], gameObject.transform.position, Quaternion.identity);
-                SpawnedObjects.Add(Spawned);
+                GameObject Sofa = Instantiate(SpawnAbles[0], gameObject.transform.position, Quaternion.identity);
+                SpawnedObjects.Add(Sofa);
                 break;
+            
+            case "CoffeeTable":
+                GameObject CoffeeTable = Instantiate(SpawnAbles[1], gameObject.transform.position, Quaternion.identity);
+                SpawnedObjects.Add(CoffeeTable);
+                break;
+                
         }
     }
 

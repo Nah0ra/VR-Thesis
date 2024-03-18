@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f22e0af16873ff94b9f735e0eccc2c02
+guid: e1f98c381669be04c8eb8b46276e69d3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: ea3cd3a642d913d4e972369396499cc1, type: 2}
+      name: Round table texture_
+    second: {fileID: 2100000, guid: d85acddd4c33b594aa20a38cda7bbc0e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
