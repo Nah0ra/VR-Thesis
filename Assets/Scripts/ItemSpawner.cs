@@ -48,6 +48,31 @@ public class ItemSpawner : MonoBehaviour
                 GameObject CoffeeTable = Instantiate(SpawnAbles[1], gameObject.transform.position, Quaternion.identity);
                 SpawnedObjects.Add(CoffeeTable);
                 break;
+
+            case "OfficeDesk":
+                GameObject OfficeDesk = Instantiate(SpawnAbles[2], gameObject.transform.position, Quaternion.identity);
+                SpawnedObjects.Add(OfficeDesk);
+                break;
+            
+            case "OfficeChair":
+                GameObject OfficeChair = Instantiate(SpawnAbles[3], gameObject.transform.position, Quaternion.identity);
+                SpawnedObjects.Add(OfficeChair);
+                break;
+
+            case "Monitor":
+                GameObject Monitor = Instantiate(SpawnAbles[4], gameObject.transform.position, Quaternion.identity);
+                SpawnedObjects.Add(Monitor);
+                break;
+
+            case "Computer":
+                GameObject Computer = Instantiate(SpawnAbles[5], gameObject.transform.position, Quaternion.identity);
+                SpawnedObjects.Add(Computer);
+                break;
+            
+            case "Keyboard":
+                GameObject Keyboard = Instantiate(SpawnAbles[6], gameObject.transform.position, Quaternion.identity);
+                SpawnedObjects.Add(Keyboard);
+                break;
                 
         }
     }
