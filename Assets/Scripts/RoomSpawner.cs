@@ -19,6 +19,8 @@ public class RoomSpawner : MonoBehaviour
 
     private GameObject SpawnedRoom;
 
+    private GameObject Player;
+
     private void Start() 
     {
         GameObject.Find("DownX").GetComponent<Button>().onClick.AddListener(delegate{SubNumber("X");});
@@ -29,6 +31,7 @@ public class RoomSpawner : MonoBehaviour
         GameObject.Find("UpZ").GetComponent<Button>().onClick.AddListener(delegate{AddNumber("Z");});
         GameObject.Find("SpawnButton").GetComponent<Button>().onClick.AddListener(SpawnRoom);
         GameObject.Find("ResetButton").GetComponent<Button>().onClick.AddListener(Reset);
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void AddNumber(string NumName)
@@ -97,6 +100,8 @@ public class RoomSpawner : MonoBehaviour
 
         SpawnedRoom = Instantiate(RoomPrefab, new Vector3(5,5,-400), Quaternion.identity);
         SpawnedRoom.transform.localScale = new Vector3(DimX, DimY, DimZ);
+
+        Player.transform.position = new Vector3(SpawnedRoom.transform.position.x, SpawnedRoom.transform.position.y - 5, SpawnedRoom.transform.position.z);
     }
 
     private void Reset()
