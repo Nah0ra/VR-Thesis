@@ -104,7 +104,7 @@ public class RoomSpawner : MonoBehaviour
         SpawnedRoom = Instantiate(RoomPrefab, new Vector3(5,5,-400), Quaternion.identity);
         SpawnedRoom.transform.localScale = new Vector3(DimX, DimY, DimZ);
 
-        Player.transform.position = SpawnedRoom.transform.position;
+        Player.transform.position = GameObject.FindGameObjectWithTag("RoomFloor").transform.position;
     }
 
     private void Reset()
