@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class RoomSpawner : MonoBehaviour
@@ -27,8 +28,8 @@ public class RoomSpawner : MonoBehaviour
     
     private void FixedUpdate() 
     {
-        LengthValue.text = LengthSlider.transform.GetChild(1).GetComponent<Slider>().value.ToString();
-        WidthValue.text = WidthSlider.transform.GetChild(1).GetComponent<Slider>().value.ToString();
-        HeightValue.text = HeightSlider.transform.GetChild(1).GetComponent<Slider>().value.ToString();
+        LengthValue.text = LengthSlider.transform.GetChild(1).GetComponent<UnityEngine.UI.Slider>().value.ToString();
+        WidthValue.text = WidthSlider.transform.GetChild(1).GetComponent<UnityEngine.UI.Slider>().value.ToString();
+        HeightValue.text = HeightSlider.transform.GetChild(1).GetComponent<UnityEngine.UI.Slider>().value.ToString();
     }
 }
