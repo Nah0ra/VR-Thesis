@@ -28,5 +28,7 @@ public class RoomSpawner : MonoBehaviour
     private void FixedUpdate() 
     {
         LengthValue.text = LengthSlider.transform.GetChild(1).GetComponent<Slider>().value.ToString();
+        WidthValue.text = WidthSlider.transform.GetChild(1).GetComponent<Slider>().value.ToString();
+        HeightValue.text = HeightSlider.transform.GetChild(1).GetComponent<Slider>().value.ToString();
     }
 }
