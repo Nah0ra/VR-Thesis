@@ -5,11 +5,33 @@ using UnityEngine;
 public class ItemSpawner : MonoBehaviour
 {
 
-    
+    public Transform SpawnArea;
+    public List<GameObject> SpawnAbles;
 
+    [SerializeField]
+    private List<GameObject> SpawnedItems;
 
-    public void SpawnItem()
+    public void SpawnItem(string ItemName)
     {
+        switch (ItemName)
+        {
+            case "Table":
+                GameObject Table = Instantiate(SpawnAbles[0], SpawnArea.transform.position,Quaternion.Euler(-90,0,0));
+                SpawnedItems.Add(Table);
+                break;
 
+            case "Chair":
+                GameObject Chair = Instantiate(SpawnAbles[1], SpawnArea.transform.position, Quaternion.Euler(-90, 0, 0));
+                SpawnedItems.Add(Chair);
+                break;
+        }
+    }
+
+    public void ResetItems()
+    {
+        foreach (GameObject item in SpawnedItems)
+        {
+            Destroy(item);
+        }
     }
 }
