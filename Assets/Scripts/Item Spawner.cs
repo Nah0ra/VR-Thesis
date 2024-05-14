@@ -24,6 +24,11 @@ public class ItemSpawner : MonoBehaviour
                 GameObject Chair = Instantiate(SpawnAbles[1], SpawnArea.transform.position, Quaternion.Euler(-90, 0, 0));
                 SpawnedItems.Add(Chair);
                 break;
+
+            case "Chair2":
+                GameObject Chair2 = Instantiate(SpawnAbles[2], SpawnArea.transform.position, Quaternion.Euler(-90,0,0));
+                SpawnedItems.Add(Chair2);
+                break;
         }
     }
 
